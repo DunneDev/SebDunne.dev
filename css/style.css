@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #052c39;
+    color: #ffffff;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    display: flex; /* display as a flex container */
+    justify-content: flex-end; /* align items to the right */
+    list-style: none; /* remove default bullet points */
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+}
+
+nav li {
+    margin-left: 1rem; /* add a little bit of space between the links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    padding: 0.5rem 1rem;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #15ade0;
+}
+
+main {
+    margin-left: 20rem;
+}
+
+h1,
+h2 {
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.highlight {
+    color: #15ade0;
+}

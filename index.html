@@ -13,12 +13,16 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/0f2b0bea05.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <nav>
             <ul>
                 <li>
-                    <a href="#about"
+                    <a href="#about" class="selected"
                         ><span class="highlight">1.</span> &ltabout&gt</a
                     >
                 </li>
@@ -43,20 +47,42 @@
             <section id="about">
                 <h1>Hi, I'm <span class="highlight">Sebastien Dunne</span></h1>
                 <h2>web development student</h2>
+                <p></p>
             </section>
 
-            <section id="skills"></section>
+            <section id="skills">
+                <h3>&ltskills&gt</h3>
 
-            <section id="portfolio"></section>
+                <h3>&lt/skills&gt</h3>
+            </section>
 
-            <section id="contact"></section>
+            <section id="portfolio">
+                <h3>&ltportfolio&gt</h3>
+
+                <h3>&lt/portfolio&gt</h3>
+            </section>
+
+            <section id="contact">
+                <h3>&ltcontact&gt</h3>
+
+                <h3>&lt/contact&gt</h3>
+            </section>
         </main>
 
-        <script
-            src="https://code.jquery.com/jquery-3.6.4.js"
-            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-            crossorigin="anonymous"
-        ></script>
-        <script src="/js/main.js"></script>
+        <aside>
+            <div>
+                <a href="mailto:dunn0203@algonquinlive.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/DunneDev">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sebastien-dunne-1306b2269/"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+        </aside>
+
+        <script src="/js/scroll.js"></script>
     </body>
 </html>

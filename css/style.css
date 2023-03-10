@@ -11,7 +11,7 @@ html {
 body {
     background-color: #052c39;
     color: #ffffff;
-    font-family: "Source Code Pro", monospace;
+    font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -40,12 +40,17 @@ nav li {
     margin-left: 1rem;
 }
 
+nav li:first-child {
+    flex-grow: 1;
+}
+
 nav a {
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin: 0 1rem;
     transition: color 0.3s ease;
     padding: 3px 0;
+    font-family: "Source Code Pro", monospace;
 }
 
 nav a:hover {
@@ -56,12 +61,25 @@ nav a.selected {
     border-bottom: 2px solid #15ade0;
 }
 
+nav li:first-child a {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #15ade0;
+    border-bottom: none;
+}
+
+nav li:first-child a:hover {
+    color: #ffffff;
+}
+
+nav li:first-child a.selected {
+    color: rgba(21, 173, 224, 0);
+}
+
 main {
     margin: 0 16rem;
-    scroll-snap-type: y mandatory;
     height: calc(100vh - 4.5rem);
     margin-top: 4.5rem;
-    overflow: scroll;
     scroll-behavior: smooth;
 
     /* hide scrollbar */
@@ -93,6 +111,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    font-family: "Source Code Pro", monospace;
 }
 
 /* h3:last-child {
@@ -100,7 +119,6 @@ h3 {
 } */
 
 section {
-    scroll-snap-align: start;
     height: calc(100vh - 4.5rem);
     display: flex;
     flex-direction: column;

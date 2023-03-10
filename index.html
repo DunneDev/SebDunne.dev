@@ -12,7 +12,8 @@
             href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
         <script
             src="https://kit.fontawesome.com/0f2b0bea05.js"
             crossorigin="anonymous"
@@ -22,7 +23,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#about" class="selected"
+                    <a href="#home">Sebastien Dunne</a>
+                </li>
+                <li>
+                    <a href="#about"
                         ><span class="highlight">1.</span> &ltabout&gt</a
                     >
                 </li>
@@ -44,25 +48,31 @@
             </ul>
         </nav>
         <main>
-            <section id="about">
+            <section id="home" class="section">
                 <h1>Hi, I'm <span class="highlight">Sebastien Dunne</span></h1>
-                <h2>web development student</h2>
+                <h2>a web development student</h2>
                 <p></p>
             </section>
 
-            <section id="skills">
+            <section id="about" class="section">
+                <h3>&ltabout&gt</h3>
+
+                <h3>&lt/about&gt</h3>
+            </section>
+
+            <section id="skills" class="section">
                 <h3>&ltskills&gt</h3>
 
                 <h3>&lt/skills&gt</h3>
             </section>
 
-            <section id="portfolio">
+            <section id="portfolio" class="section">
                 <h3>&ltportfolio&gt</h3>
 
                 <h3>&lt/portfolio&gt</h3>
             </section>
 
-            <section id="contact">
+            <section id="contact" class="section">
                 <h3>&ltcontact&gt</h3>
 
                 <h3>&lt/contact&gt</h3>
@@ -82,7 +92,7 @@
                 ></a>
             </div>
         </aside>
-
-        <script src="/js/scroll.js"></script>
+        <script type="text/javascript" src="/js/fullpage.js"></script>
+        <script type="text/javascript" src="/js/scroll.js"></script>
     </body>
 </html>

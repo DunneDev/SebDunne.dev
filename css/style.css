@@ -28,6 +28,7 @@ nav {
     right: 0;
     width: 100%;
     background-color: rgba(5, 44, 57, 0.95);
+    z-index: 1;
 }
 
 nav ul {
@@ -102,6 +103,7 @@ h1 {
     font-size: 7rem;
     margin-bottom: 1rem;
     margin-top: 5rem;
+    margin-left: 2rem;
 }
 
 h2 {

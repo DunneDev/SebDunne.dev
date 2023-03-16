@@ -139,6 +139,37 @@ section {
     grid-template-columns: 50% 50%;
 }
 
+#skills-grid > div {
+    display: flex;
+    margin: 1rem;
+}
+
+#skills p {
+    width: 25%;
+}
+
+.prog-bar {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prog-fill,
+.prog-empty {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 8px;
+}
+
+.prog-fill {
+    background-color: #15ade0;
+}
+
+.prog-empty {
+    background-color: #ffffff;
+}
+
 /* SKILLS SECTION END */
 
 /* aside */

@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: #052c39;
@@ -85,9 +85,9 @@ nav li:first-child a.selected {
 }
 
 main {
-    margin: 0 16rem;
+    margin: 4.5rem calc(50vw - 44rem) 0;
     height: calc(100vh - 4.5rem);
-    margin-top: 4.5rem;
+    width: 88rem;
     /* scroll-behavior: smooth; */
     overflow-y: scroll;
 
@@ -122,6 +122,7 @@ h2 {
 h3 {
     font-size: 2rem;
     font-family: "Source Code Pro", monospace;
+    margin: 1.5rem 0;
 }
 
 h4 {
@@ -135,10 +136,26 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
 }
 
+#home {
+    min-height: 29rem;
+}
+
+/* ABOUT ME */
+
+#about {
+    min-height: 35.5rem;
+}
+
+/* ABOUT ME END */
+
 /* SKILLS SECTION */
+
+#skills {
+    min-height: 42rem;
+}
 
 #skills-grid {
     display: grid;
@@ -180,6 +197,10 @@ section {
 
 /* PORTFOLIO BEGIN */
 
+#portfolio {
+    min-height: 38.5rem;
+}
+
 #portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -187,7 +208,7 @@ section {
 }
 
 .portfolio-card {
-    width: 100;
+    width: 100%;
     border-radius: 1rem;
     border: solid #15ade0 2px;
     padding: 1rem;
@@ -245,6 +266,10 @@ section {
 
 /* CONTACT START */
 
+#contact {
+    min-height: 27rem;
+}
+
 #contact > div {
     display: flex;
     justify-content: center;
@@ -274,7 +299,7 @@ aside {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 16rem;
+    width: calc(50vw - 44rem);
     position: fixed;
     top: 0;
     left: 0;
@@ -282,6 +307,7 @@ aside {
 
 aside div {
     text-align: center;
+    margin-top: 5rem;
     /* height: 15rem;
     display: flex;
     flex-direction: column;
@@ -307,4 +333,46 @@ aside a:hover i {
 
 .highlight {
     color: #15ade0;
+}
+
+@media screen and (max-width: 1600px) {
+    main {
+        margin: 4.5rem calc(50vw - 35rem) 0;
+        width: 70rem;
+    }
+
+    aside {
+        width: calc(50vw - 35rem);
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    #home {
+        min-height: 24rem;
+    }
+
+    #about {
+        min-height: 36.25em;
+    }
+
+    #skills {
+        min-height: 34.8rem;
+    }
+
+    #skills-grid > div {
+        margin: 0.5rem;
+    }
+
+    #portfolio {
+        min-height: 37.75rem;
+    }
+
+    #contact {
+        min-height: 26.25rem;
+    }
+}
+
+@media screen and (max-width: 1334px) {
 }
